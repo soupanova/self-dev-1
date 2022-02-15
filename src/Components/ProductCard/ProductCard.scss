@@ -1,0 +1,83 @@
+//Block
+.ProductCard {
+  width: 390px;
+  height: 100px;
+  background-color: #ffffff;
+  overflow: hidden;
+  padding: auto;
+  border-radius: 12px;
+  margin-top: 12px;
+}
+
+.ProductCard:hover {
+  box-shadow: 0 0 11px #cccccc;
+  transition: .4ms;
+}
+
+//Elements
+// .ProductCard__container {
+//   object-fit: cover;
+//   position: relative;
+//   width: 168px;
+//   height: 53px;
+// }
+
+.ProductCard__image {
+  width: 78px;
+  height: 78px;
+  margin-top: 11px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 12px;
+  display: block;
+  background-image: linear-gradient(to top, #E7E7E7 , #F5F5F5);
+  object-fit: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  float: left
+}
+
+.ProductCard__gfcallout {
+  width: auto;
+  height: auto;
+  font-family: "Inter-bold", "Inter", sans-serif;
+  color: #545454;
+  font-size: 12px;
+  line-height: 1.2;
+  letter-spacing: 0;
+  text-align: right;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-right: 15px;
+  font-weight: 700;
+  float: hidden;
+}
+
+.ProductCard__callout {
+  color: #fa9a33;
+  width: 271px;
+  height: auto;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 23px;
+  text-align: left;
+  margin: auto;
+  float: hidden;
+}
+
+.ProductCard__name {height: auto; /* 23px */
+  width: 271px;
+  height: auto;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  word-break: break-word;
+  font-family: "HelveticaNeue-Bold", sans-serif;
+  color: #000000;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 23px;
+  text-align: left;
+  margin: auto;
+  float: hidden;
+}
