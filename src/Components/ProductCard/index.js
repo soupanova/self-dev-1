@@ -1,21 +1,30 @@
 import React from 'react'
 import './ProductCard.scss'
-//Imported Components
+import PropTypes from 'prop-types'
 
 
-export default function ProductCard({ title, image, productName, gfCallout, productCallout}) {  
+export default function ProductCard({ imageAlt, imageSource, productName, gfCallout, productCallout}) {  
   return (
-    <div class='ProductCard'>
-      <div class='ProductCard__container'>
-        <img class='ProductCard__image' src={image} alt={`${title}` &&  'image'}></img>
+    <div className='ProductCard'>
+      <div>
+        <img className='ProductCard__image' src={imageSource} alt={`${imageAlt}`}></img>
       </div>
-      <div class='ProductCard__gfcallout'>
-        <p>{gfCallout}</p>
+      <div>
+        <p className='ProductCard__gfcallout'>{gfCallout}</p>
       </div>
-      <div class='ProductCard__content'>
-        <p class='ProductCard__name'>{productName}</p>
-        <p class='ProductCard__callout'>{productCallout}</p>
+      <div className='ProductCard__content'>
+        <p className='ProductCard__name'>{productName}</p>
+        <p className='ProductCard__callout'>{productCallout}</p>
       </div>
     </div>
   )
+
+}
+
+ProductCard.propTypes = {
+  productName: PropTypes.string.isRequired,
+  imageSource: PropTypes.string.isRequired,
+  imageAlt: PropTypes.string.isRequired,
+  gfCallout: PropTypes.string.isRequired,
+  productCallout: PropTypes.string.isRequired,
 }
